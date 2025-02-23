@@ -109,7 +109,7 @@ function createProductSection(category) {
     <div>
         <h1>${category.charAt(0).toUpperCase() + category.slice(1)} Series</h1>
         <div class="form-container">
-            <label>Name</label>
+            <label> Title</label>
             <input type="text" id="${category}-title" placeholder="Enter product name">
             <label>Price</label>
             <input type="text" id="${category}-price" placeholder="Enter price">
@@ -147,7 +147,7 @@ function saveProducts(category, products) {
 }
 
 function postProduct(category) {
-    const name = document.getElementById(`${category}-title`).value;
+    const title = document.getElementById(`${category}-title`).value;
     const price = document.getElementById(`${category}-price`).value;
     const brand = document.getElementById(`${category}-brand`).value;
     const description = document.getElementById(`${category}-description`).value;
